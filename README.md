@@ -34,3 +34,5 @@ with open("IO.txt", "r") as rev_file:
     rev_file.close()
     print(url)
 ```
+
+### UML Sequence Diagram
