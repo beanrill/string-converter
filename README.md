@@ -35,4 +35,5 @@ with open("IO.txt", "r") as rev_file:
     print(url)
 ```
 
-### UML Sequence Diagram
+## UML Sequence Diagram
+![microservice_sequence_diagram.png](microservice_sequence_diagram.png)
