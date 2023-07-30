@@ -38,7 +38,7 @@ def main():
             write_url("IO.txt")
         else:
             time.sleep(1)
-            print("Checking pipe again...")
+            print("Checking pipe...")
 
 
 if __name__ == '__main__':
