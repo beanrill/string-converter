@@ -1,8 +1,8 @@
 # String Converter Microservice
 
 ## About
-This microservice is a string converter which takes a string and replaces any spaces with underscores ('_') and any 
-apostrophes with its URL encoding ('%27'), then convert the modified string into a Wikipedia URL.
+This microservice is a string converter which takes a string and replaces any spaces with underscores `_` and any 
+apostrophes with its URL encoding `%27`, then convert the modified string into a Wikipedia URL.
 
 The microservice uses a txt file `IO.txt` as the pipe. 
 
