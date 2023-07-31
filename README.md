@@ -8,9 +8,9 @@ The microservice uses a txt file `IO.txt` as the pipe.
 
 ## Sample Request and Receive Call
 
-In the `main()` function of the application, "request" will be written into the pipe `IO.txt` to indicate to the 
+In the `main()` function of the program, "request" will be written into the pipe `IO.txt` to indicate to the 
 microservice that it has received a request call. It follows with the string to be converted, also written into the pipe.
-If the microservice does not receive the request call, it will continue to check 
+If the microservice does not receive the request call, it will continue to check by printing `Checking pipe...` on the console.
 
 ```python
 with open("IO.txt", "w") as io_file:
@@ -26,7 +26,12 @@ with open("IO.txt", "w") as io_file:
 The microservice gets initiated once reading "request" received on the pipe, then will proceed to read the string and 
 convert it into the right format for the Wikipedia URL.
 
-It will write the Wikipedia URL back to the pipe, which will be received by the application.
+**Example Conversion:
+**1) "Oregon State University"
+**2) "Oregon_State_University"
+**3) "https://en.wikipedia.org/wiki/Oregon_State_University"
+
+It will then write the Wikipedia URL back to the pipe, which will the application receives.
 
 ```python
 with open("IO.txt", "r") as rev_file:
