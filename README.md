@@ -26,12 +26,15 @@ with open("IO.txt", "w") as io_file:
 The microservice gets initiated once reading "request" received on the pipe, then will proceed to read the string and 
 convert it into the right format for the Wikipedia URL.
 
-**Example Conversion:
-**1) "Oregon State University"
-**2) "Oregon_State_University"
-**3) "https://en.wikipedia.org/wiki/Oregon_State_University"
+**Example Conversion:**
 
-It will then write the Wikipedia URL back to the pipe, which will the application receives.
+**1) "Oregon State University"**
+
+**2) "Oregon_State_University"**
+
+**3) "https://en.wikipedia.org/wiki/Oregon_State_University"**
+
+It will then write the Wikipedia URL back to the pipe, which the program then receives back.
 
 ```python
 with open("IO.txt", "r") as rev_file:
